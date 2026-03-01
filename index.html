@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>SmartFarm Web · 智慧农业综合管理平台 · 湖南翼农高科团队</title>
+    <meta
+      name="description"
+      content="基于航测与农田数据的智慧农业管理平台示例站点：农田信息管理、智能巡田分析、处方与作业指导、案例展示与联系表单。"
+    />
+    <link rel="preconnect" href="." />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="topbar" data-elevate="false">
+      <div class="container topbar__inner">
+        <div class="brand" aria-label="SmartFarm Web">
+          <div class="brand__mark" aria-hidden="true"></div>
+          <span class="brand__text">SmartFarm Web</span>
+        </div>
+
+        <nav class="nav" aria-label="主导航">
+          <a class="nav__link" href="#products">产品</a>
+          <a class="nav__link" href="#solutions">解决方案</a>
+          <a class="nav__link" href="#cases">案例</a>
+          <a class="nav__link" href="#contact">联系我们</a>
+        </nav>
+
+        <div class="topbar__actions">
+          <button class="btn btn--ghost" type="button" data-action="openDemo">
+            在线演示
+          </button>
+          <a class="btn btn--primary" href="#contact">开始免费试用</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="首屏">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <div class="pill">
+              <span class="pill__dot" aria-hidden="true"></span>
+              航测 · 识别 · 处方 · 作业闭环
+            </div>
+            <h1 class="hero__title">智慧农业综合管理平台 · 湖南翼农高科团队</h1>
+            <p class="hero__subtitle">
+              以高分辨率农田影像与作业数据为基础，构建地块档案、巡田分析、变量处方与
+              作业监测的数字化管理中枢。
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#solutions">了解能力</a>
+              <a class="btn btn--secondary" href="#cases">查看案例</a>
+            </div>
+
+            <dl class="stats" aria-label="平台关键指标（示例）">
+              <div class="stats__item">
+                <dt class="stats__k">地块归档</dt>
+                <dd class="stats__v">5,280</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__k">任务类型</dt>
+                <dd class="stats__v">12</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__k">作业监测</dt>
+                <dd class="stats__v">85%</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__k">风险提示</dt>
+                <dd class="stats__v">128</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero__panel" aria-label="平台界面预览（示例）">
+            <div class="panel">
+              <div class="panel__chrome" aria-hidden="true">
+                <span class="dot dot--red"></span>
+                <span class="dot dot--yellow"></span>
+                <span class="dot dot--green"></span>
+                <span class="panel__title">Dashboard Preview</span>
+              </div>
+              <div class="panel__content">
+                <img
+                  class="panel__img"
+                  alt="农田信息管理界面预览"
+                  data-img="images/农田信息管理.png"
+                  loading="eager"
+                />
+              </div>
+            </div>
+            <div class="hero__hint">
+              <span class="hero__hintIcon" aria-hidden="true"></span>
+              你的 `images/` 图片将自动用于页面配图
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="products" aria-label="产品">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">产品</h2>
+            <p class="section__desc">
+              围绕“采集—分析—处方—执行—评估”的工作流，提供从地块到作业的全链路能力。
+            </p>
+          </div>
+
+          <div
+            class="grid grid--3"
+            id="productGrid"
+            aria-label="产品卡片列表"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="section section--alt"
+        id="solutions"
+        aria-label="解决方案"
+      >
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">解决方案</h2>
+            <p class="section__desc">
+              以地块为核心建立农田档案，融合巡田影像与作业数据，实现可视化监测与智能决策。
+            </p>
+          </div>
+
+          <div class="split">
+            <div class="split__left">
+              <h3 class="h3">农田信息管理</h3>
+              <p class="muted">
+                自动识别地块边界、生成面积与档案，并将作业信息沉淀到地块维度的管理台账。
+              </p>
+              <ul class="bullets">
+                <li>农田影像重建与高精底图</li>
+                <li>地块规划、边界提取与分组</li>
+                <li>地块档案：作物、投入品、作业记录</li>
+              </ul>
+              <div class="chips" aria-label="能力标签">
+                <span class="chip">自动识别</span>
+                <span class="chip">规划归档</span>
+                <span class="chip">作业闭环</span>
+              </div>
+            </div>
+
+            <div class="split__right">
+              <div
+                class="grid grid--2"
+                id="farmGrid"
+                aria-label="农田信息管理卡片"
+              ></div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="split split--reverse">
+            <div class="split__left">
+              <h3 class="h3">智能巡田与分析</h3>
+              <p class="muted">
+                通过航测与巡田图像进行对比分析与状态评估，辅助精准管理并优化投入与产出。
+              </p>
+              <ul class="bullets">
+                <li>巡田任务组织与影像对齐</li>
+                <li>可视化监测与异常定位</li>
+                <li>生育期跟踪与风险提示</li>
+              </ul>
+              <div class="chips" aria-label="能力标签">
+                <span class="chip">巡田</span>
+                <span class="chip">分析</span>
+                <span class="chip">监测</span>
+              </div>
+            </div>
+
+            <div class="split__right">
+              <div
+                class="grid grid--2"
+                id="scoutGrid"
+                aria-label="巡田分析卡片"
+              ></div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="split">
+            <div class="split__left">
+              <h3 class="h3">处方与作业指导</h3>
+              <p class="muted">
+                从变量处方到作业航线生成，打通从“决策”到“执行”的最后一公里，并对作业效果进行回传评估。
+              </p>
+              <ul class="bullets">
+                <li>变量处方制作与导出</li>
+                <li>三维航线生成与安全约束</li>
+                <li>作业回传：覆盖率、用量与质量评估</li>
+              </ul>
+              <div class="chips" aria-label="能力标签">
+                <span class="chip">变量处方</span>
+                <span class="chip">航线</span>
+                <span class="chip">评估</span>
+              </div>
+            </div>
+
+            <div class="split__right">
+              <div
+                class="grid grid--2"
+                id="opsGrid"
+                aria-label="处方与作业指导卡片"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cases" aria-label="案例">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">典型案例</h2>
+            <p class="section__desc">
+              这里使用你 `images/`
+              目录下的“案例”图片作为展示素材，可点击放大查看。
+            </p>
+          </div>
+
+          <div class="masonry" id="caseMasonry" aria-label="案例图片墙"></div>
+        </div>
+      </section>
+
+      <section class="section section--alt" aria-label="可视化与决策">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">可视化与决策</h2>
+            <p class="section__desc">
+              通过仪表盘与知识结构图，快速统一团队视角，让巡田结果与作业策略更可解释。
+            </p>
+          </div>
+
+          <div class="tabs" data-tabs>
+            <div class="tabs__bar" role="tablist" aria-label="视图切换">
+              <button
+                class="tabs__tab is-active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-tab="dash"
+              >
+                综合仪表盘
+              </button>
+              <button
+                class="tabs__tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-tab="map"
+              >
+                结构化知识图
+              </button>
+            </div>
+            <div class="tabs__panes">
+              <div
+                class="tabs__pane is-active"
+                role="tabpanel"
+                data-pane="dash"
+              >
+                <div class="mediaCard">
+                  <img
+                    alt="综合仪表盘示例"
+                    data-img="images/农田信息管理.png"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="tabs__pane" role="tabpanel" data-pane="map">
+                <div class="mediaCard">
+                  <img
+                    alt="思维导图示例"
+                    data-img="images/思维导图.png"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-label="联系我们">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">联系我们</h2>
+            <p class="section__desc">
+              留下信息，我们会与你联系（此表单仅做前端示例，不会实际提交到服务器）。
+            </p>
+          </div>
+
+          <div class="contact">
+            <form class="form" id="contactForm" novalidate>
+              <div class="form__row">
+                <label class="field">
+                  <span class="field__label">称呼</span>
+                  <input
+                    class="field__input"
+                    name="name"
+                    autocomplete="name"
+                    placeholder="例如：张先生/李女士"
+                  />
+                </label>
+                <label class="field">
+                  <span class="field__label"
+                    >职业 <span class="req" aria-hidden="true">*</span></span
+                  >
+                  <select class="field__input" name="role" required>
+                    <option value="" selected>请选择</option>
+                    <option value="pilot">农机/无人机作业人员</option>
+                    <option value="dealer">经销商</option>
+                    <option value="farmer">农场主/种植户</option>
+                    <option value="service">农业服务组织</option>
+                    <option value="supplier">农资/农机供应商</option>
+                    <option value="other">其他</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="form__row">
+                <label class="field">
+                  <span class="field__label"
+                    >邮箱 <span class="req" aria-hidden="true">*</span></span
+                  >
+                  <input
+                    class="field__input"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </label>
+                <label class="field">
+                  <span class="field__label">电话</span>
+                  <input
+                    class="field__input"
+                    name="phone"
+                    autocomplete="tel"
+                    placeholder="可选"
+                  />
+                </label>
+              </div>
+
+              <div class="form__row">
+                <label class="field">
+                  <span class="field__label">大洲/地区</span>
+                  <select class="field__input" name="continent">
+                    <option value="" selected>请选择</option>
+                    <option value="asia">亚洲</option>
+                    <option value="europe">欧洲</option>
+                    <option value="na">北美</option>
+                    <option value="sa">南美</option>
+                    <option value="africa">非洲</option>
+                    <option value="oceania">大洋洲</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span class="field__label">国家/地区</span>
+                  <input
+                    class="field__input"
+                    name="country"
+                    placeholder="例如：中国"
+                  />
+                </label>
+              </div>
+
+              <label class="field">
+                <span class="field__label">需求描述</span>
+                <textarea
+                  class="field__input field__textarea"
+                  name="message"
+                  rows="4"
+                  placeholder="你希望实现的业务流程 / 数据对接 / 设备类型等"
+                ></textarea>
+              </label>
+
+              <div class="form__actions">
+                <button class="btn btn--primary" type="submit">提交</button>
+                <button class="btn btn--ghost" type="reset">清空</button>
+                <span
+                  class="form__tip"
+                  id="formTip"
+                  role="status"
+                  aria-live="polite"
+                ></span>
+              </div>
+            </form>
+
+            <aside class="contact__aside" aria-label="联系信息">
+              <div class="asideCard">
+                <h3 class="asideCard__title">你将获得</h3>
+                <ul class="bullets bullets--tight">
+                  <li>基于地块档案的管理模板</li>
+                  <li>巡田分析与异常定位流程</li>
+                  <li>处方与作业闭环示例</li>
+                  <li>可视化看板与报表框架</li>
+                </ul>
+              </div>
+              <div class="asideCard">
+                <h3 class="asideCard__title">隐私说明</h3>
+                <p class="muted">
+                  这是本地静态页面示例，不会把你的信息发送到任何外部服务；如需真实提交，请接入后端接口。
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="页脚">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--footer">
+            <div class="brand__mark" aria-hidden="true"></div>
+            <span class="brand__text">SmartFarm Web</span>
+          </div>
+          <p class="muted">
+            基于航测与农田数据的智慧农业管理平台示例站点：农田信息管理、智能巡田分析、处方与作业指导、案例展示与联系表单。
+          </p>
+          <p class="muted">
+            © <span id="year"></span> SmartFarm Web. All rights reserved.
+          </p>
+        </div>
+        <div class="footer__right" aria-label="页脚链接（示例）">
+          <a class="footer__link" href="#products">产品</a>
+          <a class="footer__link" href="#solutions">解决方案</a>
+          <a class="footer__link" href="#cases">案例</a>
+          <a class="footer__link" href="#contact">联系</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="imgModal" aria-label="图片预览">
+      <div class="modal__inner">
+        <button
+          class="modal__close"
+          type="button"
+          data-action="closeModal"
+          aria-label="关闭"
+        >
+          ×
+        </button>
+        <img id="modalImg" alt="" />
+        <p class="modal__caption" id="modalCaption"></p>
+      </div>
+    </dialog>
+  </body>
+</html>
